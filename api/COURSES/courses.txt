@@ -1,24 +1,4 @@
-**Diapositive 4 : Solution et proposition de valeur**
-
-"Regardons maintenant la solution que propose notre application HearLearn. Cette application vise à transformer vos documents en audio de manière simple et rapide. Pour cela, l’utilisateur n’a qu’à soumettre ses cours, et l’application se charge de générer une lecture à voix haute.\
-Concernant la proposition de valeur, HearLearn apporte trois bénéfices majeurs:\
-
-
-&#x20;Tout d’abord, la **flexibilité**, qui permet aux étudiants de réviser pendant leurs trajets que ce soit dans le train ou le bus, ou dans n'importe quelle situation où la lecture est difficile. \
-Ensuite, la **productivité**, grâce à une optimisation du temps d’apprentissage avec un format audio parfaitement adapté aux besoins académiques. De plus, certaines personnes préfèrent apprendre en écoutant plutôt qu'en lisant, ce qui renforce encore l’utilité de cette solution. \
-&#x20;Enfin, l’**interactivité**, qui combine lecture et écoute pour maximiser l’efficacité de l’apprentissage. \
-Cette combinaison va permettre de rendre l’expérience d’apprentissage bien plus enrichissante."\
-
-
-**Diapositive 5 : Fonctionnalités et écrans**
-
-"Passons maintenant aux fonctionnalités clés de notre application. Tout d’abord, l’utilisateur peut soumettre un cours au format PDF et, s’il le possède, le cours audio associé, par exemple un enregistrement réalisé pendant un cours ou une visio. Ensuite, il peut écouter l’audio associé tout en consultant le PDF simultanément, ce qui est particulièrement utile pour suivre des notions complexes.\
-Nous avons également des fonctionnalités futures en perspective, comme la synchronisation entre le PDF et l’audio pour améliorer l’expérience utilisateur, ainsi que la création automatique d’audios à partir de PDFs en utilisant une API de synthèse vocale. Ces ajouts renforceront la valeur ajoutée de l’application et répondront encore mieux aux attentes des étudiants."
-
-**Diapositive 10 : Problèmes des utilisateurs et conclusion**
-
-"Enfin, nous avons pris en compte les premiers retours d’utilisation de l’application, qui ont mis en lumière deux problèmes principaux.\
-Le premier concerne la **navigation dans l’audio**, qui peut être difficile. Les utilisateurs ont exprimé le besoin de pouvoir accéder rapidement à des sections spécifiques de leurs cours, par exemple pour réécouter un passage particulier.\
-Le second problème touche à la **qualité de la conversion audio**. Certains utilisateurs ont relevé des intonations monotones et des erreurs de prononciation, surtout sur des termes techniques, en raison de l’usage d’une IA de synthèse vocale.\
-Pour répondre à ces défis, nous avons décidé d’intégrer une navigation avancée dans les audios, tout en limitant l’usage de l’IA pour garantir un maximum d’audios de qualité proche de celle d’une voix humaine. Ces améliorations sont essentielles pour offrir une expérience optimale à nos utilisateurs."
-
+AI computer vision
+AI NLP
+Deep Learning
+Reinforcement Learning
