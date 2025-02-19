@@ -124,6 +124,5 @@ $courses = getCourses($file);
         </form>
     </div>
 </div>
-<footer>Interface optimized for iPhone</footer>
 </body>
 </html>
