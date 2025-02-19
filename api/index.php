@@ -1,6 +1,6 @@
 <?php
-// Définition du chemin du fichier courses.txt
-$file = __DIR__ . "/COURSES/courses.txt"; 
+// Définition du chemin correct vers courses.txt
+$file = __DIR__ . "/COURSES/courses.txt";
 
 // Fonction pour récupérer les cours
 function getCourses($file) {
@@ -25,7 +25,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 // Récupération des cours
 $courses = getCourses($file);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

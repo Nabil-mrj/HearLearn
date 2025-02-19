@@ -3,7 +3,7 @@
 $course = htmlspecialchars($_GET['course'] ?? '');
 $courseDir = __DIR__ . "/COURSES/" . $course;
 
-// Vérification si le dossier du cours existe
+// Vérification de l'existence du dossier du cours
 if (!is_dir($courseDir)) {
     echo "Course not found!";
     exit;
