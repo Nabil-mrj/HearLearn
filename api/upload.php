@@ -1,36 +1,24 @@
 <?php
-// Ensure files are uploaded
+// Définition du répertoire d'upload
+$uploadDir = __DIR__ . '/uploads/';
+if (!is_dir($uploadDir)) {
+    mkdir($uploadDir, 0777, true);
+}
+
+// Gestion des fichiers uploadés
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Check if the file is a PDF
-    if (isset($_FILES['pdfFile']) && $_FILES['pdfFile']['error'] === UPLOAD_ERR_OK) {
-        $fileTmpPath = $_FILES['pdfFile']['tmp_name'];
-        $fileName = $_FILES['pdfFile']['name'];
-        $uploadDir = __DIR__; // Current directory
-        $destPath = $uploadDir . '/' . $fileName;
-
-        // Move the uploaded file to the current directory
-        if (move_uploaded_file($fileTmpPath, $destPath)) {
-            echo "PDF file has been successfully uploaded!";
-        } else {
-            echo "PDF file upload failed!";
+    foreach (["pdfFile" => "pdf", "audioFile" => "audio"] as $inputName => $type) {
+        if (isset($_FILES[$inputName]) && $_FILES[$inputName]['error'] === UPLOAD_ERR_OK) {
+            $fileTmpPath = $_FILES[$inputName]['tmp_name'];
+            $fileName = basename($_FILES[$inputName]['name']);
+            $destPath = $uploadDir . $fileName;
+            
+            if (move_uploaded_file($fileTmpPath, $destPath)) {
+                echo ucfirst($type) . " file uploaded successfully!";
+            } else {
+                echo ucfirst($type) . " file upload failed!";
+            }
         }
     }
-
-    // Check if the file is an audio file
-    if (isset($_FILES['audioFile']) && $_FILES['audioFile']['error'] === UPLOAD_ERR_OK) {
-        $fileTmpPath = $_FILES['audioFile']['tmp_name'];
-        $fileName = $_FILES['audioFile']['name'];
-        $uploadDir = __DIR__; // Current directory
-        $destPath = $uploadDir . '/' . $fileName;
-
-        // Move the uploaded file to the current directory
-        if (move_uploaded_file($fileTmpPath, $destPath)) {
-            echo "Audio file has been successfully uploaded!";
-        } else {
-            echo "Audio file upload failed!";
-        }
-    }
-} else {
-    echo "No files uploaded!";
 }
 ?>
