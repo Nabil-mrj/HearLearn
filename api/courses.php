@@ -1,16 +1,16 @@
 <?php
-// Récupération du cours sélectionné
-$course = htmlspecialchars($_GET['course'] ?? '');
-$courseDir = __DIR__ . "/COURSES/" . $course;
+$subject = htmlspecialchars($_GET['subject'] ?? '');
+$subjectDir = __DIR__ . "/COURSES/" . $subject;
 
-// Vérification de l'existence du dossier du cours
-if (!is_dir($courseDir)) {
-    echo "Course not found!";
-    exit;
+// Vérifier si la matière existe
+if (!is_dir($subjectDir)) {
+    die("Subject not found!");
 }
 
-// Récupération des fichiers du dossier
-$items = scandir($courseDir);
+// Récupérer les cours (les sous-dossiers)
+$courses = array_filter(scandir($subjectDir), function($item) use ($subjectDir) {
+    return is_dir($subjectDir . "/" . $item) && $item !== "." && $item !== "..";
+});
 ?>
 
 <!DOCTYPE html>
@@ -18,25 +18,18 @@ $items = scandir($courseDir);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Files</title>
+    <title><?php echo htmlspecialchars($subject); ?> - Courses</title>
 </head>
 <body>
-<h1>Files for <?php echo htmlspecialchars($course); ?></h1>
-<ul>
-    <?php foreach ($items as $item): 
-        if ($item === '.' || $item === '..') continue;
-        $filePath = "COURSES/$course/$item";
-        $fileExt = pathinfo($filePath, PATHINFO_EXTENSION);
-        echo "<li>";
-        if ($fileExt === "pdf") {
-            echo "<iframe src='$filePath' width='600' height='500'></iframe>";
-        } elseif (in_array($fileExt, ["mp3", "wav", "ogg"])) {
-            echo "<audio controls><source src='$filePath' type='audio/$fileExt'></audio>";
-        } else {
-            echo "<a href='$filePath'>$item</a>";
-        }
-        echo "</li>";
-    endforeach; ?>
-</ul>
+    <h1>Courses in <?php echo htmlspecialchars($subject); ?></h1>
+    <ul>
+        <?php foreach ($courses as $course): ?>
+            <li>
+                <a href="course_detail.php?subject=<?php echo urlencode($subject); ?>&course=<?php echo urlencode($course); ?>">
+                    <?php echo htmlspecialchars($course); ?>
+                </a>
+            </li>
+        <?php endforeach; ?>
+    </ul>
 </body>
 </html>
