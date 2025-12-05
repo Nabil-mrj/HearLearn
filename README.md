@@ -27,14 +27,14 @@ Le projet démontre un pipeline complet d’ingestion, traitement et visualisati
 
 ### Prototype Java (Proof of Concept)
 - Lecture audio via console.
-- Gestion d’erreurs et démonstration minimale d’un module hors web.
+- Gestion d’erreurs et démonstration d’un module hors web.
 - Présent dans le dossier `Java_example/`.
 
 ## Architecture du projet
 
 ### Front-end
 - HTML5 / CSS3
-- JavaScript minimal
+- JavaScript
 - Pages principales :
   - `index.html` : entrée du projet, liens vers livrables.
   - `presentation.html` : description textuelle du concept.
