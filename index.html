@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I&E: liens du projet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            background: white;
+            margin: 50px auto;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            color: #0056b3;
+            font-size: 26px;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 20px;
+            font-size: 16px;
+            color: white;
+            background: #0056b3;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+            height: 45px;
+        }
+        .btn:hover {
+            background: #003f7f;
+        }
+        .btn-gray {
+            background: #6c757d;
+        }
+        .btn-gray:hover {
+            background: #5a6268;
+        }
+        .video-frame {
+            margin: 20px 0;
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* Ratio 16:9 */
+        }
+        .video-frame iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Projet I&E: HEARlearn</h1>
+       
+        <a href="home.php" class="btn">Application</a>
+        <div class="video-frame">
+            <iframe src="https://drive.google.com/file/d/1eJq4L19_sPaXCeakzMt-z5hlY8CIa_oA/preview" allow="autoplay"></iframe>
+        </div>
+       
+        <div class="btn-container">
+            <a href="presentation.pdf" class="btn" target="_blank">Slides de présentation</a>
+            <a href="/Java_example/code_java.html" class="btn">Code Java du prototype</a>
+            <a href="presentation.html" class="btn">Présentation de la startup</a>
+        </div>
+        <a href="dashboard.php" class="btn btn-gray">Dashboard</a>
+    </div>
+</body>
+</html>

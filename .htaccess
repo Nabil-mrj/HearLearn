@@ -1,0 +1,15 @@
+# Définir le type MIME correct pour les fichiers .mjs
+<IfModule mod_mime.c>
+    AddType application/javascript .mjs
+</IfModule>
+
+# Activer le moteur de réécriture
+RewriteEngine On
+
+# Définir index.html comme fichier d'index
+DirectoryIndex index.html
+
+# Rediriger vers index.html si le fichier ou le dossier n'existe pas
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]

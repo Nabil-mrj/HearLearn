@@ -1,0 +1,145 @@
+{
+    "courses": {
+        "AI: Advanced Optimization and Automated Machine Learning\/Lecture 2.3: First order methods": {
+            "clicks": 7,
+            "visits": [
+                {
+                    "timestamp": "2024-12-12 09:32:45",
+                    "duration": 1203.42
+                },
+                {
+                    "timestamp": "2024-12-20 14:15:12",
+                    "duration": 362.78
+                },
+                {
+                    "timestamp": "2025-01-05 10:20:30",
+                    "duration": 2389.14
+                },
+                {
+                    "timestamp": "2025-01-12 11:05:00",
+                    "duration": 2390.89
+                },
+                {
+                    "timestamp": "2025-01-22 16:45:10",
+                    "duration": 599.33
+                },
+                {
+                    "timestamp": "2025-01-28 15:20:45",
+                    "duration": 2390.45
+                },
+                {
+                    "timestamp": "2025-02-01 20:10:55",
+                    "duration": 2388.62
+                }
+            ]
+        },
+        "AI: Advanced Optimization and Automated Machine Learning\/Lecture 2.4: Second order methods": {
+            "clicks": 8,
+            "visits": [
+                {
+                    "timestamp": "2024-12-15 11:10:35",
+                    "duration": 2432.74
+                },
+                {
+                    "timestamp": "2024-12-28 17:40:22",
+                    "duration": 538.92
+                },
+                {
+                    "timestamp": "2025-01-07 09:05:45",
+                    "duration": 179.55
+                },
+                {
+                    "timestamp": "2025-01-12 13:00:00",
+                    "duration": 2433.11
+                },
+                {
+                    "timestamp": "2025-01-19 22:30:15",
+                    "duration": 2432.98
+                },
+                {
+                    "timestamp": "2025-01-25 10:15:30",
+                    "duration": 801.24
+                },
+                {
+                    "timestamp": "2025-01-30 14:25:50",
+                    "duration": 2432.45
+                },
+                {
+                    "timestamp": "2025-02-03 18:45:33",
+                    "duration": 2432.84
+                }
+            ]
+        },
+        "AI: Advanced Optimization and Automated Machine Learning\/Lecture 3.3: Constrained optimisation": {
+            "clicks": 6,
+            "visits": [
+                {
+                    "timestamp": "2024-12-18 12:05:21",
+                    "duration": 402.61
+                },
+                {
+                    "timestamp": "2025-01-08 15:25:48",
+                    "duration": 2431.89
+                },
+                {
+                    "timestamp": "2025-01-18 20:40:25",
+                    "duration": 601.77
+                },
+                {
+                    "timestamp": "2025-01-25 21:14:36",
+                    "duration": 503.12
+                },
+                {
+                    "timestamp": "2025-01-31 16:30:00",
+                    "duration": 2432.43
+                },
+                {
+                    "timestamp": "2025-02-04 09:45:28",
+                    "duration": 2432.19
+                }
+            ]
+        },
+        "AI: Learning Theory\/Class 1: O.O.D. learning for learning better": {
+            "clicks": 5,
+            "visits": [
+                {
+                    "timestamp": "2024-12-10 13:22:41",
+                    "duration": 419.12
+                },
+                {
+                    "timestamp": "2024-12-22 18:30:18",
+                    "duration": 348.99
+                },
+                {
+                    "timestamp": "2025-01-06 08:15:53",
+                    "duration": 151.33
+                },
+                {
+                    "timestamp": "2025-01-18 19:40:05",
+                    "duration": 399.78
+                },
+                {
+                    "timestamp": "2025-02-01 21:10:33",
+                    "duration": 500.87
+                }
+            ]
+        },
+        "HCI: Serious game\/Lecture 4: Designing serious game": {
+            "clicks": 3,
+            "visits": [
+                {
+                    "timestamp": "2024-12-14 14:10:37",
+                    "duration": 202.88
+                },
+                {
+                    "timestamp": "2025-01-12 16:50:23",
+                    "duration": 798.21
+                },
+                {
+                    "timestamp": "2025-01-29 20:22:11",
+                    "duration": 602.54
+                }
+            ]
+        }
+    }
+}

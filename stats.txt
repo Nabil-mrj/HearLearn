@@ -1,0 +1,141 @@
+{
+  "courses": {
+    "AI: Deep Learning for NLP\/Lecture 3: Attention mechanism": {
+      "clicks": 10,
+      "visits": [
+        {
+          "timestamp": "2024-12-03 08:15:13",
+          "duration": 10.57
+        },
+        {
+          "timestamp": "2024-12-03 08:16:28",
+          "duration": 61.92
+        },
+        {
+          "timestamp": "2024-12-03 08:22:02",
+          "duration": 300.33
+        },
+        {
+          "timestamp": "2024-12-03 08:28:10",
+          "duration": 842.71
+        },
+        {
+          "timestamp": "2024-12-03 08:42:51",
+          "duration": 186.09
+        },
+        {
+          "timestamp": "2024-12-04 14:42:39",
+          "duration": 1082.45
+        },
+        {
+          "timestamp": "2024-12-05 20:07:49",
+          "duration": 1861.28
+        },
+        {
+          "timestamp": "2024-12-12 21:03:07",
+          "duration": 900.83
+        },
+        {
+          "timestamp": "2024-12-13 07:55:25",
+          "duration": 779.56
+        },
+        {
+          "timestamp": "2024-12-16 10:14:35",
+          "duration": 31.52
+        }
+      ]
+    },
+    "MIAGE: Matière\/Cours": {
+      "clicks": 6,
+      "visits": [
+        {
+          "timestamp": "2024-11-16 12:50:42",
+          "duration": 481.37
+        },
+        {
+          "timestamp": "2024-11-16 13:02:10",
+          "duration": 722.09
+        },
+        {
+          "timestamp": "2024-11-27 08:10:12",
+          "duration": 245.78
+        },
+        {
+          "timestamp": "2024-12-03 13:48:06",
+          "duration": 607.35
+        },
+        {
+          "timestamp": "2024-12-10 17:55:57",
+          "duration": 183.14
+        },
+        {
+          "timestamp": "2024-12-28 22:17:44",
+          "duration": 1142.05
+        }
+      ]
+    },
+    "AI: Learning Theory\/Class 1: O.O.D. learning for learning better": {
+      "clicks": 5,
+      "visits": [
+        {
+          "timestamp": "2025-01-10 09:00:18",
+          "duration": 914.02
+        },
+        {
+          "timestamp": "2025-01-11 22:10:51",
+          "duration": 1503.49
+        },
+        {
+          "timestamp": "2025-01-12 07:45:09",
+          "duration": 481.66
+        },
+        {
+          "timestamp": "2025-01-14 11:30:33",
+          "duration": 607.27
+        },
+        {
+          "timestamp": "2025-01-15 20:50:12",
+          "duration": 915.11
+        }
+      ]
+    },
+    "HCI: Serious game\/Lecture 4: Designing serious game": {
+      "clicks": 3,
+      "visits": [
+        {
+          "timestamp": "2025-01-02 19:22:27",
+          "duration": 420.66
+        },
+        {
+          "timestamp": "2025-01-10 08:05:48",
+          "duration": 179.94
+        },
+        {
+          "timestamp": "2025-02-01 23:40:35",
+          "duration": 600.88
+        }
+      ]
+    },
+    "AI: Advanced Optimization and Automated Machine Learning\/Lecture 2.4: Second order methods": {
+      "clicks": 4,
+      "visits": [
+        {
+          "timestamp": "2025-02-02 17:10:12",
+          "duration": 483.29
+        },
+        {
+          "timestamp": "2025-02-02 17:28:43",
+          "duration": 961.07
+        },
+        {
+          "timestamp": "2025-02-09 11:20:34",
+          "duration": 1202.66
+        },
+        {
+          "timestamp": "2025-02-15 06:50:55",
+          "duration": 722.34
+        }
+      ]
+    }
+  }
+}
