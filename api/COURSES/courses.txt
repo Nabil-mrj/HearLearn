@@ -1,4 +1,0 @@
-AI computer vision
-AI NLP
-Deep Learning
-Reinforcement Learning
