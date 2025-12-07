@@ -1,83 +1,83 @@
 # HEARlearn — Audio Augmentation Platform for Academic Material
 
-HEARlearn est une plateforme web permettant de transformer des supports de cours (PDF) en pistes audio et d’analyser l’usage de ces contenus.  
-Le projet démontre un pipeline complet d’ingestion, traitement et visualisation de données autour de contenus pédagogiques.
+HEARlearn is a web platform designed to transform course materials (PDF) into audio tracks and analyze user interaction with the content.  
+The project demonstrates a complete pipeline for ingestion, processing, and visualization of data derived from educational materials.
 
-## Objectifs techniques
+## Technical Objectives
 
-- Développer une interface web pour l’import de documents (PDF, audio).
-- Offrir une consultation synchronisée support visuel / lecture audio.
-- Implémenter un système de suivi d’usage (interactions, écoutes, complétions).
-- Construire une base technique extensible vers des modèles de synthèse vocale ou d’analyse comportementale.
+- Develop a web interface for importing documents (PDF, audio).
+- Provide synchronized visualization between text-based material and audio playback.
+- Implement a usage-tracking system (interactions, listening behavior, completion rates).
+- Build a technical foundation extensible to speech synthesis models or behavioral analysis components.
 
-## Fonctionnalités
+## Features
 
-### Ingestion & gestion de documents
-- Upload de fichiers PDF et audio.
-- Stockage serveur et gestion des métadonnées via scripts PHP.
+### Document ingestion & management
+- Upload of PDF and audio files.
+- Server-side storage and metadata handling through PHP scripts.
 
-### Visualisation et lecture
-- Affichage simultané PDF + lecteur audio dans une interface responsive.
-- Navigation simple dans les pistes audio.
+### Visualization and playback
+- Unified display of PDF documents and audio player within a responsive interface.
+- Basic navigation within audio tracks.
 
-### Tracking & analyse
-- Collecte des interactions utilisateurs.
-- Enregistrement des statistiques via scripts dédiés.
-- Dashboard permettant une première exploration analytique.
+### Tracking & analytics
+- Collection of user interactions.
+- Logging of statistics through dedicated scripts.
+- Dashboard providing initial analytical insights.
 
-### Prototype Java (Proof of Concept)
-- Lecture audio via console.
-- Gestion d’erreurs et démonstration d’un module hors web.
-- Présent dans le dossier `Java_example/`.
+### Java Prototype (Proof of Concept)
+- Console-based audio playback.
+- Basic error handling and demonstration of an offline module.
+- Included in the `Java_example/` directory.
 
-## Architecture du projet
+## Project Architecture
 
 ### Front-end
 - HTML5 / CSS3
 - JavaScript
-- Pages principales :
-  - `index.html` : entrée du projet, liens vers livrables.
-  - `presentation.html` : description textuelle du concept.
+- Main pages:
+  - `index.html`: project entry point, links to all deliverables.
+  - `presentation.html`: concept description.
 
 ### Back-end
-- PHP pour :
-  - ingestion (`upload.php`),
-  - visualisation (`home.php`),
-  - statistiques (`dashboard.php`),
-  - collecte d’activité (`updateStats.php`, `statsFunctions.php`).
+- PHP for:
+  - document ingestion (`upload.php`),
+  - content visualization (`home.php`),
+  - statistics (`dashboard.php`),
+  - activity logging (`updateStats.php`, `statsFunctions.php`).
 
-### Organisation générale
-- Séparation nette entre ingestion, visualisation et tracking.
-- Scripts autonomes pour opérations serveur et manipulation des fichiers.
-- Slides et documents intégrés via l’interface web.
+### General organization
+- Clear separation between ingestion, visualization, and tracking layers.
+- Standalone scripts for server operations and file manipulation.
+- Slides and documentation accessible through the web interface.
 
-## Données et suivi analytique
+## Data and Analytical Tracking
 
-Le module de tracking constitue un socle exploitable pour des travaux data/ML :
+The tracking module provides a foundation for data/ML work:
 
-- journalisation de l’engagement (écoutes, durées, récurrence),
-- extraction exploitable pour analyses exploratoires,
-- potentiel d’évolution vers :
-  - modèles prédictifs d’abandon,
-  - segmentation utilisateur,
-  - systèmes de recommandation,
-  - intégration d’API TTS (HuggingFace, Coqui, OpenAI).
+- logging of engagement metrics (listens, durations, recurrence),
+- analyzable data extraction for exploratory analysis,
+- potential extensions such as:
+  - churn prediction models,
+  - user segmentation,
+  - recommendation systems,
+  - integration of TTS APIs (HuggingFace, Coqui, OpenAI).
 
-## Contenu du dépôt
+## Repository Contents
 
-- `home.php` : interface principale PDF + audio.
-- `dashboard.php` : tableau de bord analytique.
-- `upload.php` : ingestion des documents.
-- `updateStats.php` / `statsFunctions.php` : suivi des interactions.
-- `index.html` : page centrale listant les livrables.
-- `presentation.pdf` : slides du projet.
-- `presentation.html` : description du concept.
-- `Java_example/` : prototype Java.
+- `home.php`: main PDF + audio interface.
+- `dashboard.php`: analytics dashboard.
+- `upload.php`: document ingestion module.
+- `updateStats.php` / `statsFunctions.php`: interaction tracking.
+- `index.html`: main navigation page.
+- `presentation.pdf`: project slides.
+- `presentation.html`: concept description.
+- `Java_example/`: Java prototype.
 
-## Axes d’amélioration
+## Future Improvements
 
-- Intégration d’un pipeline TTS basé sur modèles neuronaux.
-- Alignement automatique texte/audio (forced alignment).
-- Extraction d’embeddings pour recherche sémantique.
-- Migration du module analytique vers API REST + base SQL.
-- Génération automatique de segments, résumés et chapitres.
+- Integration of a neural TTS pipeline.
+- Automatic text/audio alignment (forced alignment).
+- Embedding extraction for semantic search.
+- Migration of analytics to a REST API + SQL-based backend.
+- Automatic generation of chapters, segments, and summaries.
