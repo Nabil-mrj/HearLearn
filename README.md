@@ -3,7 +3,7 @@
 HEARlearn is a web platform designed to transform course materials (PDF) into audio tracks and analyze user interaction with the content.  
 The project demonstrates a complete pipeline for ingestion, processing, and visualization of data derived from educational materials.
 
-## Technical Objectives
+## Technical objectives
 
 - Develop a web interface for importing documents (PDF, audio).
 - Provide synchronized visualization between text-based material and audio playback.
@@ -25,12 +25,12 @@ The project demonstrates a complete pipeline for ingestion, processing, and visu
 - Logging of statistics through dedicated scripts.
 - Dashboard providing initial analytical insights.
 
-### Java Prototype (Proof of Concept)
+### Java prototype (Proof of Concept)
 - Console-based audio playback.
 - Basic error handling and demonstration of an offline module.
 - Included in the `Java_example/` directory.
 
-## Project Architecture
+## Project architecture
 
 ### Front-end
 - HTML5 / CSS3
@@ -51,7 +51,7 @@ The project demonstrates a complete pipeline for ingestion, processing, and visu
 - Standalone scripts for server operations and file manipulation.
 - Slides and documentation accessible through the web interface.
 
-## Data and Analytical Tracking
+## Data and analytical tracking
 
 The tracking module provides a foundation for data/ML work:
 
@@ -63,7 +63,7 @@ The tracking module provides a foundation for data/ML work:
   - recommendation systems,
   - integration of TTS APIs (HuggingFace, Coqui, OpenAI).
 
-## Repository Structure
+## Repository structure
 
 ```text
 .
@@ -84,7 +84,7 @@ The tracking module provides a foundation for data/ML work:
 
 ```
 
-## Future Improvements
+## Future improvements
 
 - Integration of a neural TTS pipeline.
 - Automatic text/audio alignment (forced alignment).
