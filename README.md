@@ -1,4 +1,4 @@
-# HEARlearn — Audio Augmentation Platform for Academic Material
+# HEARlearn — Audio augmentation platform for academic material
 
 HEARlearn is a web platform designed to transform course materials (PDF) into audio tracks and analyze user interaction with the content.  
 The project demonstrates a complete pipeline for ingestion, processing, and visualization of data derived from educational materials.
@@ -63,16 +63,26 @@ The tracking module provides a foundation for data/ML work:
   - recommendation systems,
   - integration of TTS APIs (HuggingFace, Coqui, OpenAI).
 
-## Repository Contents
+## Repository Structure
 
-- `home.php`: main PDF + audio interface.
-- `dashboard.php`: analytics dashboard.
-- `upload.php`: document ingestion module.
-- `updateStats.php` / `statsFunctions.php`: interaction tracking.
-- `index.html`: main navigation page.
-- `presentation.pdf`: project slides.
-- `presentation.html`: concept description.
-- `Java_example/`: Java prototype.
+```text
+.
+├── README.md
+│
+├── index.html                                  # Entry point of the project, links to all deliverables
+├── presentation.html                            # Concept description page
+├── presentation.pdf                             # Project slides
+│
+├── home.php                                     # Main interface: PDF viewer + audio player
+├── upload.php                                   # Document ingestion (PDF/audio)
+├── dashboard.php                                # User activity analytics dashboard
+├── updateStats.php                              # Logging of user interactions
+├── statsFunctions.php                            # Utility functions for tracking and stats processing
+│
+└── Java_example/
+    └── code_java.html                           # Java prototype: minimal audio playback demo
+
+```
 
 ## Future Improvements
 
